@@ -1,49 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
     <head id="header">
-        <!-- Connects base.css to base.html -->
         <link href="./styles.css" rel="stylesheet" />
-        <!-- Connects base.js to base.html -->
         <script src="script.js"></script>
     </head>
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <div>
-            <p class="text">This is the beginning of Mentored!</p>
-            <p class="text">I am super excited!!!</p>
-        </div>
     <body id="body">
-        <div class="flex-container">
-            <a href="https://codebase.berkeley.edu">Press here to go to Codebase Website</a>
-            <img class="image" src="https://codebase.berkeley.edu/static/238f7857e162c32b372ec34e5e68b6ff/8dcbd/cb-logo-black.png">
-            <img class="image" src="https://larynqi.com/assets/img/denero-crop-2.PNG">
-            <iframe id="iframe" src="https://larynqi.com" title="description"></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1 id="title">mentored team google form quiz!</h1>
+        <div class="questions">
+            <div class="q">
+                <p class="question-text">
+                    question 1: who's most likely to be late to work session
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(0, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(0, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(0, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(0, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(0, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(0, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(0, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(0)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 1 results:</p>
+                        <img src="q1.png" alt="q1 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
+            <div class="q">
+                <p class="question-text">
+                    question 2: who's most likely to not go to retreat
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(1, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(1, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(1, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(1, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(1, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(1, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(1, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(1)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 2 results:</p>
+                        <img src="q2.png" alt="q2 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
+            <div class="q">
+                <p class="question-text">
+                    question 3: who's most likely to throw up at retreat
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(2, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(2, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(2, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(2, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(2, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(2, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(2, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(2)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 3 results:</p>
+                        <img src="q3.png" alt="q3 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
+            <div class="q">
+                <p class="question-text">
+                    question 4: who's most likely to shit on anthony
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(3, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(3, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(3, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(3, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(3, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(3, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(3, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(3)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 4 results:</p>
+                        <img src="q4.png" alt="q4 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
+            <div class="q">
+                <p class="question-text">
+                    question 5: who's most likely to miss work session for a sneaky link
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(4, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(4, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(4, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(4, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(4, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(4, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(4, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(4)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 5 results:</p>
+                        <img src="q5.png" alt="q5 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
+            <div class="q">
+                <p class="question-text">
+                    question 6: who's most likely to be the worst on aux
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(5, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(5, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(5, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(5, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(5, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(5, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(5, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(5)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 6 results:</p>
+                        <img src="q6.png" alt="q6 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
+            <div class="q">
+                <p class="question-text">
+                    question 7: who's most likely to pour milk before cereal
+                </p>
+                <div class="choices">
+                    <button class="choice" onclick="checkAnswer(6, 0)">angie</button>
+                    <button class="choice" onclick="checkAnswer(6, 1)">cindy</button>
+                    <button class="choice" onclick="checkAnswer(6, 2)">colin</button>
+                    <button class="choice" onclick="checkAnswer(6, 3)">dominic</button>
+                    <button class="choice" onclick="checkAnswer(6, 4)">justin</button>
+                    <button class="choice" onclick="checkAnswer(6, 5)">kinton</button>
+                    <button class="choice" onclick="checkAnswer(6, 6)">saadhvi</button>
+                </div>
+                <p class="feedback"></p>
+                <!-- start of modal -->
+                <button class="results" onclick="showPicture(6)"></button>
+                <div class="all_modals">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="q_result_text">question 7 results:</p>
+                        <img src="q7.png" alt="q7 results" class="result_pics">
+                    </div>
+                </div>
+                <!-- end of modal -->
+            </div>
         </div>
-        <div class="interactive">
-            <center>
-                <button class="button" onclick="alert('this is the inline js way – dont do this way !!! 😡');">Press</button>
-                <button class="button" id="my-id" onclick="myFunction()">Press me 2</button>
-            </center>
+        <div class="refresh">
+            <button id="restart" onclick="restart()">restart</button>
         </div>
-        <center>
-            <form class="form" onsubmit="submit();">
-                <label>Username:</label>
-                <input id="username" type="text" name="username" placeholder="xXlarynisawesomeXx">
-                <br><br>
-                
-                <label>E-mail:</label>
-                <input id="email" type="email" name="emailaddress" required="true">
-                <br><br>
-
-                <label>Password:</label>
-                <input id="password" type="password" name="password">
-                <br><br>
-
-                <input type="submit" value="Submit"/>
-            </form>
-    </center>
     </body>
 </html>
 
