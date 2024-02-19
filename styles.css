@@ -1,11 +1,6 @@
-/* .name to define css of classes */
-.flex-container {
-    /* to use flexbox, must have the display:flex line */
-    display:flex;
-    flex-direction:row-reverse;
-
+#body {
+    background-color: rgb(205, 235, 246);
 }
-
 #title {
     color: white;
     background-image: linear-gradient(to top, lightblue, #3498db);
@@ -19,6 +14,16 @@
     padding: 1%;
 }
 
+#score{
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* padding: 1%; */
+}
 .question-text {
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -87,6 +92,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 250px;
+    /* align-self: center; */
 }
 #restart:hover{
     background-color: rgb(224, 224, 224);
@@ -95,13 +102,13 @@
 .refresh{
     color: white;
     background-image: linear-gradient(to bottom, lightblue, #3498db);
-    /* justify-content: center; */
+    justify-content: center;
     max-width: 600px;
     margin: auto;
     border-radius: 20px;
     margin-top: 20px;
     padding: 1%;   
-    align-items: center; 
+    align-content: center; 
 }
 
 .results{
