@@ -82,6 +82,7 @@
     cursor: pointer;
 }
 
+
 #restart {
     font-size: 1em;
     display: block;
@@ -134,8 +135,13 @@
     box-shadow: 2px 2px 5px white;
 }
 .result_pics {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 80%; 
+    height: 70%;
+    /* width: 100%; Full width */
+    /* height: 100%; Full height */
+    /* top: 50%;
+    bottom: 50%; */
+    /* position: fixed; */
 }
 
 .all_modals {
